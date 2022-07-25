@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#1CCC5B" />
+	<link rel="stylesheet" href="styles/css/styles.css">
+	<link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
+	<title>QR Generator</title>
+</head>
+<body>
+	<header class="header">
+		<img class="header__logo" src="./assets/img/logo.png" alt="Logo header">
+		<p class="header__text">QR Generator</p>
+	</header>
+	<main>
+		<section class="main-container">
+			<form class="generate-form" id="generate-form">
+				<input class="generate-form__input" type="text" placeholder="Type your message or url" name="value"/>
+				<button class="generate-form__btn">
+					<i class="bi bi-arrow-clockwise"></i> Generate
+				</button>
+			</form>
+			<div class="container-qr"></div>
+		</section>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
